@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bosque Escuela</title>
+    <style>
+        /* Estilos Generales - Verde y Blanco */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4; /* Fondo verde muy suave */
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50; /* Verde principal */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            color: #2E7D32; /* Verde bosque */
+            border-bottom: 2px solid #81c784;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-radius: 12px;
+        }
+
+        /* Descripción Inicial */
+        .intro-texto {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 6px solid #2E7D32;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* Grid para las tarjetas de árboles */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .card {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(46, 125, 50, 0.15);
+            border-color: #a5d6a7;
+        }
+
+        /* ZONA DE IMAGEN */
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #ddd; /* Color gris de fondo si no hay imagen */
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            margin-top: 0;
+            color: #1b5e20;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .forestal { background-color: #558b2f; } /* Verde oliva */
+        .frutal { background-color: #f9a825; }   /* Naranja/Amarillo */
+
+        .label {
+            font-weight: bold;
+            color: #388e3c;
+            display: block;
+            margin-top: 12px;
+            font-size: 0.95em;
+        }
+
+        .info-text {
+            margin: 5px 0 0 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #2E7D32;
+            color: white;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Proyecto: Bosque Escuela</h1>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>Sobre el Proyecto</h2>
+            <div class="intro-texto">
+                <p>
+                    El Bosque Escuela es un espacio donde aprendemos a cultivar, mantener y respetar las diferentes 
+                    especies de árboles forestales y frutales, entendiendo sus ciclos de vida y necesidades.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Catálogo de Especies: Crecimiento y Cuidados</h2>
+            
+            <div class="info-grid">
+
+                <article class="card">
+                    <img src="Pino.jpeg" alt="Pino"> <div class="card-content">
+                        <span class="badge forestal">Forestal</span>
+                        <h3 class="card-title">Pino</h3>
+                        
+                        <span class="label"> Tiempo de crecimiento:</span>
+                        <p class="info-text">Lento. Tarda entre 10 y 20 años en alcanzar una talla madura significativa.</p>
+
+                        <span class="label"> Cuidados necesarios:</span>
+                        <p class="info-text">Requiere mucho sol directo. Riego moderado (resiste sequías una vez adulto).</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="Ayacahuite.jpeg" alt="Ayacahuite"> <div class="card-content">
+                        <span class="badge forestal">Forestal</span>
+                        <h3 class="card-title">Ayacahuite</h3>
+                        
+                        <span class="label"> Tiempo de crecimiento:</span>
+                        <p class="info-text">Medio-Lento. Puede crecer hasta 40 metros en varias décadas.</p>
+
+                        <span class="label"> Cuidados necesarios:</span>
+                        <p class="info-text">Prefiere climas templados a fríos y suelos profundos y húmedos.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="Ahuehuete.jpeg" alt="Ahuehuete"> <div class="card-content">
+                        <span class="badge forestal">Forestal / Maderable</span>
+                        <h3 class="card-title">Ahuehuete</h3>
+                        
+                        <span class="label"> Tiempo de crecimiento:</span>
+                        <p class="info-text">Lento pero muy longevo. Crece constantemente si tiene agua suficiente.</p>
+
+                        <span class="label"> Cuidados necesarios:</span>
+                        <p class="info-text"><strong>Vital:</strong> Necesita mucha agua constante (suelo pantanoso o riegos muy frecuentes).</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="Durazno.jpeg" alt="Durazno"> <div class="card-content">
+                        <span class="badge frutal">Frutal</span>
+                        <h3 class="card-title">Durazno</h3>
+                        
+                        <span class="label"> Tiempo de crecimiento:</span>
+                        <p class="info-text">Rápido. Empieza a dar frutos a partir del 3er año.</p>
+
+                        <span class="label"> Cuidados necesarios:</span>
+                        <p class="info-text">Poda anual obligatoria para buena fruta. Riego regular en verano.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="Chavacano.jpeg" alt="Chabacano"> <div class="card-content">
+                        <span class="badge frutal">Frutal</span>
+                        <h3 class="card-title">Chabacano</h3>
+                        
+                        <span class="label"> Tiempo de crecimiento:</span>
+                        <p class="info-text">3 a 4 años para primera producción.</p>
+
+                        <span class="label"> Cuidados necesarios:</span>
+                        <p class="info-text">Proteger de heladas tardías ya que florece muy temprano. Suelo bien drenado.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="Pera.jpeg" alt="Pera"> <div class="card-content">
+                        <span class="badge frutal">Frutal</span>
+                        <h3 class="card-title">Pera</h3>
+                        
+                        <span class="label"> Tiempo de crecimiento:</span>
+                        <p class="info-text">Lento comparado con otros frutales (4 a 6 años para dar fruto).</p>
+
+                        <span class="label"> Cuidados necesarios:</span>
+                        <p class="info-text">Resistente al frío. Requiere poda de formación tipo vaso o eje central.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="Manzana.jpeg" alt="Manzana"> <div class="card-content">
+                        <span class="badge frutal">Frutal</span>
+                        <h3 class="card-title">Manzana</h3>
+                        
+                        <span class="label"> Tiempo de crecimiento:</span>
+                        <p class="info-text">4 a 5 años dependiendo de la variedad.</p>
+
+                        <span class="label"> Cuidados necesarios:</span>
+                        <p class="info-text">Necesita "horas frío" en invierno para brotar bien. Abonado orgánico en primavera.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="Limon.jpeg" alt="Limon"> <div class="card-content">
+                        <span class="badge frutal">Frutal</span>
+                        <h3 class="card-title">Limón</h3>
+                        
+                        <span class="label"> Tiempo de crecimiento:</span>
+                        <p class="info-text">3 a 5 años. Puede dar fruto todo el año en climas templados.</p>
+
+                        <span class="label"> Cuidados necesarios:</span>
+                        <p class="info-text">Sensible al frío extremo. Necesita hierro (si las hojas amarillean) y mucho sol.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
